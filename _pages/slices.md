@@ -3,6 +3,7 @@ layout: default
 title: Slice Registry
 parent: Projects
 nav_order: 1
+has_children: true
 permalink: /slices/
 ---
 
