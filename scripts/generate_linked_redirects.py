@@ -96,7 +96,7 @@ def main() -> None:
                 "layout: redirect",
                 f"title: {yaml_string(title)}",
                 f'parent: {yaml_string("Projects")}',
-                f"nav_order: {index}",
+                f"nav_order: {100 + index}",
                 f"redirect_to: {yaml_string(url)}",
             ]
         )
