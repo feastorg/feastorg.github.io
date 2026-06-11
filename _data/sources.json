@@ -1,19 +1,22 @@
 {
     "sources": [
         {
-            "name": "breads",
-            "title": "BREADS",
-            "repo": "feastorg/BREADS",
+            "name": "bread-infra",
+            "title": "BREAD Standard",
+            "repo": "feastorg/bread-infra",
             "ref": "main",
-            "subdir": "docs",
-            "mount": "projects/breads",
+            "subdir": "spec",
+            "mount": "projects/bread-infra",
             "nav_order": 4,
             "redirect_from": [
                 "/breads/",
-                "/breads"
+                "/breads",
+                "/bread-infra/",
+                "/bread-infra"
             ],
             "exclude": [
-                "**/*.xcf",
+                "**/.gitkeep",
+                "**/design-constraints-legacy.md",
                 "**/TODO.md"
             ]
         },
