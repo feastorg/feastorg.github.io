@@ -1,3 +1,32 @@
+// ── Slice status badges ──────────────────────────────────────────────────────
+.slice-badge {
+  display: inline-block;
+  padding: 0.15em 0.55em;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.slice-badge--released    { background: $feast-primary-100; color: #fff; }
+.slice-badge--validated   { background: $feast-growth-100;  color: #fff; }
+.slice-badge--prototype   { background: $feast-accent-100;  color: #fff; }
+.slice-badge--concept     { background: $feast-text-muted;  color: #fff; }
+.slice-badge--deprecated  { background: #c0392b;            color: #fff; }
+
+// ── Slice registry table ─────────────────────────────────────────────────────
+.slice-registry table {
+  width: 100%;
+  table-layout: fixed;
+}
+.slice-registry td:first-child { width: 18%; font-weight: 600; }
+.slice-registry td:nth-child(2) { width: 36%; }
+.slice-registry td:nth-child(3) { width: 14%; }
+.slice-registry td:nth-child(4) { width: 14%; }
+.slice-registry td:nth-child(5) { width: 18%; }
+
 .feast-theme-switcher {
   display: flex;
   align-items: center;

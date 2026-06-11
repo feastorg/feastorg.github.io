@@ -1,0 +1,828 @@
+{
+  "generated": "2026-06-11T22:10:19Z",
+  "total": 40,
+  "summary": {
+    "released": 10,
+    "prototype": 14,
+    "concept": 16
+  },
+  "slices": [
+    {
+      "repo": "Slice_TEMP_NANO_S2L-r1",
+      "id": "slice-temp-nano-s2l-r1",
+      "name": "Slice Template — Nano, Small, 2-Layer, Rev 1",
+      "status": "released",
+      "category": "template",
+      "summary": "Starter template for BREAD slices using Arduino Nano on a small 2-layer PCB (70x100mm).",
+      "hw_version": "1.0.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "template",
+        "nano",
+        "small",
+        "2-layer"
+      ],
+      "url": "https://github.com/feastorg/Slice_TEMP_NANO_S2L-r1",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_TEMP_NANO_S2L-r2",
+      "id": "slice-temp-nano-s2l-r2",
+      "name": "Slice Template — Nano, Small, 2-Layer, Rev 2",
+      "status": "released",
+      "category": "template",
+      "summary": "Starter template for BREAD slices using Arduino Nano on a small 2-layer PCB (70x100mm), second revision.",
+      "hw_version": "2.0.0",
+      "fw_version": null,
+      "hw_gen_current": 2,
+      "schema_version": "1.0",
+      "tags": [
+        "template",
+        "nano",
+        "small",
+        "2-layer"
+      ],
+      "url": "https://github.com/feastorg/Slice_TEMP_NANO_S2L-r2",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_TEMP_NUCL_L4L-r1",
+      "id": "slice-temp-nucl-l4l-r1",
+      "name": "Slice Template — Nucleo32, Large, 4-Layer, Rev 1",
+      "status": "released",
+      "category": "template",
+      "summary": "Starter template for BREAD slices using STM32 Nucleo32 on a large 4-layer PCB (100x145mm).",
+      "hw_version": "1.0.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "template",
+        "nucleo32",
+        "large",
+        "4-layer",
+        "stm32"
+      ],
+      "url": "https://github.com/feastorg/Slice_TEMP_NUCL_L4L-r1",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_TEMP_NUCL_S4L-r1",
+      "id": "slice-temp-nucl-s4l-r1",
+      "name": "Slice Template — Nucleo32, Small, 4-Layer, Rev 1",
+      "status": "released",
+      "category": "template",
+      "summary": "Starter template for BREAD slices using STM32 Nucleo32 on a small 4-layer PCB (70x100mm).",
+      "hw_version": "1.0.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "template",
+        "nucleo32",
+        "small",
+        "4-layer",
+        "stm32"
+      ],
+      "url": "https://github.com/feastorg/Slice_TEMP_NUCL_S4L-r1",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_TEMP_PICO_L4L-r1",
+      "id": "slice-temp-pico-l4l-r1",
+      "name": "Slice Template — Pico, Large, 4-Layer, Rev 1",
+      "status": "released",
+      "category": "template",
+      "summary": "Starter template for BREAD slices using Raspberry Pi Pico on a large 4-layer PCB (100x145mm).",
+      "hw_version": "1.0.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "template",
+        "pico",
+        "large",
+        "4-layer",
+        "rp2040"
+      ],
+      "url": "https://github.com/feastorg/Slice_TEMP_PICO_L4L-r1",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_TEMP_PICO_S2L-r1",
+      "id": "slice-temp-pico-s2l-r1",
+      "name": "Slice Template — Pico, Small, 2-Layer, Rev 1",
+      "status": "released",
+      "category": "template",
+      "summary": "Starter template for BREAD slices using Raspberry Pi Pico on a small 2-layer PCB (70x100mm).",
+      "hw_version": "1.0.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "template",
+        "pico",
+        "small",
+        "2-layer",
+        "rp2040"
+      ],
+      "url": "https://github.com/feastorg/Slice_TEMP_PICO_S2L-r1",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_PRTO_CONN_S2L",
+      "id": "slice-prto-conn-s2l",
+      "name": "Prototyping Slice — Terminal Connectors",
+      "status": "released",
+      "category": "prototype",
+      "summary": "Prototyping slice with terminal connectors for quick wiring on a small 2-layer PCB.",
+      "hw_version": "1.0.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "prototyping",
+        "terminal-connectors",
+        "breadboarding"
+      ],
+      "url": "https://github.com/feastorg/Slice_PRTO_CONN_S2L",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_PRTO_SMT_S2L",
+      "id": "slice-prto-smt-s2l",
+      "name": "Prototyping Slice — SMT Components",
+      "status": "released",
+      "category": "prototype",
+      "summary": "Prototyping slice with SMT component pads for surface-mount prototyping on a small 2-layer PCB.",
+      "hw_version": "1.0.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "prototyping",
+        "smt",
+        "surface-mount"
+      ],
+      "url": "https://github.com/feastorg/Slice_PRTO_SMT_S2L",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_PRTO_THT_S2L",
+      "id": "slice-prto-tht-s2l",
+      "name": "Prototyping Slice — THT Components",
+      "status": "released",
+      "category": "prototype",
+      "summary": "Prototyping slice with through-hole component pads for THT prototyping on a small 2-layer PCB.",
+      "hw_version": "1.0.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "prototyping",
+        "through-hole",
+        "tht"
+      ],
+      "url": "https://github.com/feastorg/Slice_PRTO_THT_S2L",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_PRTO_THTA_S2L",
+      "id": "slice-prto-thta-s2l",
+      "name": "Prototyping Slice — THT Array",
+      "status": "released",
+      "category": "prototype",
+      "summary": "Prototyping slice with through-hole array pads for general prototyping on a small 2-layer PCB.",
+      "hw_version": "1.0.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "prototyping",
+        "through-hole",
+        "array"
+      ],
+      "url": "https://github.com/feastorg/Slice_PRTO_THTA_S2L",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_DCMT",
+      "id": "slice-dcmt",
+      "name": "DC Motor Driver IC Carrier",
+      "status": "prototype",
+      "category": "actuation",
+      "summary": "Dual-channel DC motor driver slice using LMD18200.",
+      "hw_version": "0.2.0",
+      "fw_version": "0.1.0",
+      "hw_gen_current": 2,
+      "schema_version": "1.0",
+      "tags": [
+        "motor-control",
+        "dc-motor",
+        "h-bridge",
+        "pid"
+      ],
+      "url": "https://github.com/feastorg/Slice_DCMT",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_RLAY",
+      "id": "slice-rlay",
+      "name": "4-Channel Relay",
+      "status": "prototype",
+      "category": "actuation",
+      "summary": "4-channel optocoupler-isolated relay slice with analog feedback inputs.",
+      "hw_version": "0.1.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "relay",
+        "switching",
+        "analog-input",
+        "optocoupler"
+      ],
+      "url": "https://github.com/feastorg/Slice_RLAY",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_SERV",
+      "id": "slice-serv",
+      "name": "Servo Controller",
+      "status": "prototype",
+      "category": "actuation",
+      "summary": "5-channel PWM servo controller slice.",
+      "hw_version": "0.1.0",
+      "fw_version": "0.1.0",
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "servo",
+        "pwm",
+        "motor-control",
+        "actuation"
+      ],
+      "url": "https://github.com/feastorg/Slice_SERV",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_STEP",
+      "id": "slice-step",
+      "name": "Stepper Motor Driver Carrier",
+      "status": "prototype",
+      "category": "actuation",
+      "summary": "4-channel stepper motor driver slice using A4988 carrier modules.",
+      "hw_version": "0.1.0",
+      "fw_version": "0.1.0",
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "stepper-motor",
+        "motion-control",
+        "a4988",
+        "accelstepper"
+      ],
+      "url": "https://github.com/feastorg/Slice_STEP",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_FPSG",
+      "id": "slice-fpsg",
+      "name": "Full-Bridge Programmable Strain Gauge Amplifier",
+      "status": "prototype",
+      "category": "sensing",
+      "summary": "6-channel full-bridge strain gauge amplifier with AD8426 instrumentation amp and SD logging.",
+      "hw_version": "0.1.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "strain-gauge",
+        "load-cell",
+        "instrumentation-amplifier",
+        "force-measurement"
+      ],
+      "url": "https://github.com/feastorg/Slice_FPSG",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_IAQM",
+      "id": "slice-iaqm",
+      "name": "Industrial Air Quality Monitor",
+      "status": "prototype",
+      "category": "sensing",
+      "summary": "Multi-sensor industrial air quality monitor with gas, VOC, temperature, humidity, and pressure sensing.",
+      "hw_version": "0.1.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "air-quality",
+        "gas-sensor",
+        "environmental",
+        "industrial-monitoring",
+        "data-logging"
+      ],
+      "url": "https://github.com/feastorg/Slice_IAQM",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_LVAI",
+      "id": "slice-lvai",
+      "name": "Low-Voltage Analog Input Reader",
+      "status": "prototype",
+      "category": "sensing",
+      "summary": "6-channel low-voltage analog input reader with FFT analysis.",
+      "hw_version": "0.1.0",
+      "fw_version": "0.1.0",
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "analog-input",
+        "fft",
+        "voltage-measurement",
+        "signal-processing"
+      ],
+      "url": "https://github.com/feastorg/Slice_LVAI",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_THRM_31855",
+      "id": "slice-thrm-31855",
+      "name": "4-Channel Thermocouple (MAX31855K)",
+      "status": "prototype",
+      "category": "sensing",
+      "summary": "4-channel K-type thermocouple measurement slice using MAX31855K.",
+      "hw_version": "0.1.0",
+      "fw_version": "0.1.0",
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "temperature",
+        "thermocouple",
+        "max31855",
+        "sensing"
+      ],
+      "url": "https://github.com/feastorg/Slice_THRM_31855",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_VCDC",
+      "id": "slice-vcdc",
+      "name": "DC Voltage and Current Sensor",
+      "status": "prototype",
+      "category": "sensing",
+      "summary": "Isolated DC voltage (AMC1311) and current (ACS724) measurement slice.",
+      "hw_version": "0.1.0",
+      "fw_version": "0.1.0",
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "power-monitoring",
+        "dc-voltage",
+        "dc-current",
+        "hall-effect",
+        "isolation"
+      ],
+      "url": "https://github.com/feastorg/Slice_VCDC",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_HEAT",
+      "id": "slice-heat",
+      "name": "DC Heating Element Controller",
+      "status": "prototype",
+      "category": "integrated",
+      "summary": "DC heating element controller with thermocouple feedback and PID.",
+      "hw_version": "0.1.0",
+      "fw_version": "0.1.0",
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "heater-control",
+        "thermocouple",
+        "pid",
+        "temperature",
+        "dc-heating"
+      ],
+      "url": "https://github.com/feastorg/Slice_HEAT",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_RLHT",
+      "id": "slice-rlht",
+      "name": "Relay Heater Controller",
+      "status": "prototype",
+      "category": "integrated",
+      "summary": "Dual-channel relay heater controller with thermocouple feedback and PID.",
+      "hw_version": "0.2.0",
+      "fw_version": "0.1.0",
+      "hw_gen_current": 2,
+      "schema_version": "1.0",
+      "tags": [
+        "heater-control",
+        "thermocouple",
+        "relay",
+        "pid",
+        "temperature"
+      ],
+      "url": "https://github.com/feastorg/Slice_RLHT",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_SOLR",
+      "id": "slice-solr",
+      "name": "Field Solar Power",
+      "status": "prototype",
+      "category": "power",
+      "summary": "Solar-powered field power slice with LM2576 buck regulator and battery charging.",
+      "hw_version": "0.1.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "solar",
+        "power-supply",
+        "battery-charger",
+        "field-deployment"
+      ],
+      "url": "https://github.com/feastorg/Slice_SOLR",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_IOCT",
+      "id": "slice-ioct",
+      "name": "Industrial Digital I/O Controller",
+      "status": "prototype",
+      "category": "interface",
+      "summary": "PLC-style 6-input 4-output isolated digital I/O slice for 24V field devices.",
+      "hw_version": "0.1.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "digital-io",
+        "industrial",
+        "24v",
+        "plc",
+        "ssr",
+        "opto-isolated"
+      ],
+      "url": "https://github.com/feastorg/Slice_IOCT",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_USBP",
+      "id": "slice-usbp",
+      "name": "USB Passthrough",
+      "status": "prototype",
+      "category": "interface",
+      "summary": "USB passthrough and test interface slice.",
+      "hw_version": "0.1.0",
+      "fw_version": "0.1.0",
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "usb",
+        "interface",
+        "serial",
+        "passthrough"
+      ],
+      "url": "https://github.com/feastorg/Slice_USBP",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_GDHB",
+      "id": "slice-gdhb",
+      "name": "Gate-Driven H-Bridge",
+      "status": "concept",
+      "category": "actuation",
+      "summary": "Gate-driven discrete H-bridge motor driver using A4957 gate driver IC.",
+      "hw_version": "0.1.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "motor-control",
+        "h-bridge",
+        "gate-driver",
+        "discrete-mosfet"
+      ],
+      "url": "https://github.com/feastorg/Slice_GDHB",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_STPC",
+      "id": "slice-stpc",
+      "name": "Stepper Motor Controller Carrier",
+      "status": "concept",
+      "category": "actuation",
+      "summary": "Carrier for up to four Stepper_card modules (DRV8825) with SPI encoder feedback and RP2040 MCU.",
+      "hw_version": "0.1.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "stepper-motor",
+        "motion-control",
+        "drv8825",
+        "stepper-card",
+        "rp2040",
+        "pico",
+        "spi-encoder"
+      ],
+      "url": "https://github.com/feastorg/Slice_STPC",
+      "updated": "2026-06-11"
+    },
+    {
+      "repo": "Slice_AOEM",
+      "id": "slice-aoem",
+      "name": "Atlas Scientific OEM Carrier",
+      "status": "concept",
+      "category": "sensing",
+      "summary": "Isolated carrier for Atlas Scientific OEM modules (pH, DO, EC, ORP) with ADM3260 I2C isolation.",
+      "hw_version": "0.1.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "atlas-scientific",
+        "oem",
+        "water-quality",
+        "i2c-isolation",
+        "ph",
+        "dissolved-oxygen",
+        "conductivity",
+        "orp"
+      ],
+      "url": "https://github.com/feastorg/Slice_AOEM",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_AQDO",
+      "id": "slice-aqdo",
+      "name": "Dissolved Oxygen Sensor",
+      "status": "concept",
+      "category": "sensing",
+      "summary": "Analog dissolved oxygen amplifier and measurement slice for aquaculture/water quality.",
+      "hw_version": "0.1.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "dissolved-oxygen",
+        "water-quality",
+        "aquaculture",
+        "analog-amplifier"
+      ],
+      "url": "https://github.com/feastorg/Slice_AQDO",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_AQEC",
+      "id": "slice-aqec",
+      "name": "Aqua Electrical Conductivity Sensor",
+      "status": "concept",
+      "category": "sensing",
+      "summary": "Electrical conductivity (EC) measurement slice with oscillator-driven probe interface.",
+      "hw_version": "0.1.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "water-quality",
+        "electrical-conductivity",
+        "aquaponics",
+        "hydroponics"
+      ],
+      "url": "https://github.com/feastorg/Slice_AQEC",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_AQOR",
+      "id": "slice-aqor",
+      "name": "Aqua ORP Sensor",
+      "status": "concept",
+      "category": "sensing",
+      "summary": "Oxidation-reduction potential (ORP) measurement slice with analog amplifier front-end.",
+      "hw_version": "0.1.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "water-quality",
+        "orp",
+        "redox",
+        "aquaponics",
+        "hydroponics"
+      ],
+      "url": "https://github.com/feastorg/Slice_AQOR",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_AQPH",
+      "id": "slice-aqph",
+      "name": "Aqua pH Sensor",
+      "status": "concept",
+      "category": "sensing",
+      "summary": "pH measurement slice with high-impedance analog amplifier front-end.",
+      "hw_version": "0.1.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "water-quality",
+        "ph",
+        "aquaponics",
+        "hydroponics"
+      ],
+      "url": "https://github.com/feastorg/Slice_AQPH",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_LEPD",
+      "id": "slice-lepd",
+      "name": "LED-Photodiode Photometer",
+      "status": "concept",
+      "category": "sensing",
+      "summary": "LED-photodiode optical density / photometer slice with constant-current LED driver and transimpedance amplifier.",
+      "hw_version": "0.1.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "photometer",
+        "optical-density",
+        "led-photodiode",
+        "transimpedance-amplifier"
+      ],
+      "url": "https://github.com/feastorg/Slice_LEPD",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_LOAD",
+      "id": "slice-load",
+      "name": "Load Cell Amplifier",
+      "status": "concept",
+      "category": "sensing",
+      "summary": "4-channel load cell / strain gauge amplifier slice using ADS1234.",
+      "hw_version": "0.1.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "load-cell",
+        "strain-gauge",
+        "adc",
+        "force-measurement"
+      ],
+      "url": "https://github.com/feastorg/Slice_LOAD",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_PHDO",
+      "id": "slice-phdo",
+      "name": "pH and Dissolved Oxygen Atlas Sci Carrier",
+      "status": "concept",
+      "category": "sensing",
+      "summary": "Carrier slice for Atlas Scientific pH and dissolved oxygen EZO modules.",
+      "hw_version": "0.1.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "water-quality",
+        "ph",
+        "dissolved-oxygen",
+        "atlas-scientific",
+        "aquaponics"
+      ],
+      "url": "https://github.com/feastorg/Slice_PHDO",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_RTDM",
+      "id": "slice-rtdm",
+      "name": "RTD Temperature Measurement",
+      "status": "concept",
+      "category": "sensing",
+      "summary": "RTD temperature measurement slice using MAX31865.",
+      "hw_version": "0.1.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "temperature",
+        "rtd",
+        "pt100",
+        "max31865"
+      ],
+      "url": "https://github.com/feastorg/Slice_RTDM",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_THMX",
+      "id": "slice-thmx",
+      "name": "Thermocouple Multiplexer",
+      "status": "concept",
+      "category": "sensing",
+      "summary": "Multi-channel thermocouple reader with LTC2983 universal temperature sensor IC.",
+      "hw_version": "0.1.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "thermocouple",
+        "temperature",
+        "multiplexer",
+        "universal-sensor"
+      ],
+      "url": "https://github.com/feastorg/Slice_THMX",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_THRM_31856",
+      "id": "slice-thrm-31856",
+      "name": "4-Channel Thermocouple (MAX31856)",
+      "status": "concept",
+      "category": "sensing",
+      "summary": "4-channel multi-type thermocouple measurement slice using MAX31856.",
+      "hw_version": "0.1.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "temperature",
+        "thermocouple",
+        "max31856",
+        "sensing",
+        "multi-type"
+      ],
+      "url": "https://github.com/feastorg/Slice_THRM_31856",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_VCAC",
+      "id": "slice-vcac",
+      "name": "AC Voltage and Current Sensor",
+      "status": "concept",
+      "category": "sensing",
+      "summary": "Isolated AC voltage (ZMPT101B) and non-invasive current (SCT-013) measurement slice.",
+      "hw_version": "0.1.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "power-monitoring",
+        "ac-voltage",
+        "ac-current",
+        "energy-monitoring",
+        "isolation"
+      ],
+      "url": "https://github.com/feastorg/Slice_VCAC",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_BUCK",
+      "id": "slice-buck",
+      "name": "Buck Converter / Analog Signal Generator",
+      "status": "concept",
+      "category": "power",
+      "summary": "Programmable buck converter slice for variable DC output voltage.",
+      "hw_version": "0.1.0",
+      "fw_version": "0.1.0",
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "power",
+        "buck-converter",
+        "dc-dc",
+        "signal-generator"
+      ],
+      "url": "https://github.com/feastorg/Slice_BUCK",
+      "updated": "2026-05-19"
+    },
+    {
+      "repo": "Slice_IOAC",
+      "id": "slice-ioac",
+      "name": "Analog I/O Conditioning",
+      "status": "concept",
+      "category": "interface",
+      "summary": "Mixed analog signal conditioning slice with protected inputs, buffered outputs, and isolated digital I/O.",
+      "hw_version": "0.1.0",
+      "fw_version": null,
+      "hw_gen_current": 1,
+      "schema_version": "1.0",
+      "tags": [
+        "analog-io",
+        "signal-conditioning",
+        "mixed-signal",
+        "data-acquisition"
+      ],
+      "url": "https://github.com/feastorg/Slice_IOAC",
+      "updated": "2026-05-19"
+    }
+  ]
+}

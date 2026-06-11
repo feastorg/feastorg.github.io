@@ -36,8 +36,16 @@ jobs:
         id: pages
         uses: actions/configure-pages@v6
 
+      - name: Install Python script dependencies
+        run: pip install requests pyyaml
+
       - name: Import remote repository docs
         run: bash scripts/import_sources.sh
+
+      - name: Generate slice registry index
+        run: python3 scripts/generate_slice_index.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate linked project stubs
         run: python3 scripts/generate_linked_redirects.py
