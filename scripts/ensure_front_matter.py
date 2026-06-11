@@ -231,9 +231,12 @@ def process_page(root: Path, hub: Path, project_title: str, page_path: Path) -> 
         section_title = section_slug.replace("_", " ").replace("-", " ").title()
         ensure_section_index(root / section_slug, project_title, section_title)
 
-        if page_path.name != "index.md":
-            fm.setdefault("grand_parent", project_title)
-            fm.setdefault("parent", section_title)
+        if page_path.name == "index.md":
+            # ensure_section_index already wrote the correct front matter;
+            # do not overwrite it with the stale fm dict.
+            return
+        fm.setdefault("grand_parent", project_title)
+        fm.setdefault("parent", section_title)
 
     # Hide README when a sibling index exists
     if (
