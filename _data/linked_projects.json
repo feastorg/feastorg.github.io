@@ -1,93 +1,23 @@
 {
     "linked_projects": [
         {
-            "name": "Slice_DCMT",
-            "title": "Slice DCMT",
-            "url": "/Slice_DCMT/"
-        },
-        {
-            "name": "Slice_RLHT",
-            "title": "Slice RLHT",
-            "url": "/Slice_RLHT/"
-        },
-        {
-            "name": "Slice_THRM_31855",
-            "title": "Slice THRM 31855",
-            "url": "/Slice_THRM_31855/"
-        },
-        {
-            "name": "Slice_THRM_31856",
-            "title": "Slice THRM 31856",
-            "url": "/Slice_THRM_31856/"
-        },
-        {
             "name": "can-nano-shield",
-            "title": "CAN Nano Shield",
+            "title": "CAN Nano Shield 🔗",
             "url": "/can-nano-shield/"
         },
         {
             "name": "can-nano-shield-fieldbus",
-            "title": "CAN Nano Fieldbus",
+            "title": "CAN Nano Fieldbus 🔗",
             "url": "/can-nano-shield-fieldbus/"
         },
         {
-            "name": "Slice_TEMP_NANO_S2L-r1",
-            "title": "Slice TEMP NANO S2L-r1",
-            "url": "/Slice_TEMP_NANO_S2L-r1/"
-        },
-        {
-            "name": "Slice_TEMP_NANO_S2L-r2",
-            "title": "Slice TEMP NANO S2L-r2",
-            "url": "/Slice_TEMP_NANO_S2L-r2/"
-        },
-        {
-            "name": "Slice_TEMP_NUCL_S4L-r1",
-            "title": "Slice TEMP NUCL S4L-r1",
-            "url": "/Slice_TEMP_NUCL_S4L-r1/"
-        },
-        {
-            "name": "Slice_TEMP_NUCL_L4L-r1",
-            "title": "Slice TEMP NUCL L4L-r1",
-            "url": "/Slice_TEMP_NUCL_L4L-r1/"
-        },
-        {
-            "name": "Slice_TEMP_PICO_S2L-r1",
-            "title": "Slice TEMP PICO S2L-r1",
-            "url": "/Slice_TEMP_PICO_S2L-r1/"
-        },
-        {
-            "name": "Slice_TEMP_PICO_L4L-r1",
-            "title": "Slice TEMP PICO L4L-r1",
-            "url": "/Slice_TEMP_PICO_L4L-r1/"
-        },
-        {
-            "name": "Slice_PRTO_CONN_S2L",
-            "title": "Slice PRTO CONN S2L",
-            "url": "/Slice_PRTO_CONN_S2L/"
-        },
-        {
-            "name": "Slice_PRTO_THT_S2L",
-            "title": "Slice PRTO THT S2L",
-            "url": "/Slice_PRTO_THT_S2L/"
-        },
-        {
-            "name": "Slice_PRTO_THTA_S2L",
-            "title": "Slice PRTO THTA S2L",
-            "url": "/Slice_PRTO_THTA_S2L/"
-        },
-        {
-            "name": "Slice_PRTO_SMT_S2L",
-            "title": "Slice PRTO SMT S2L",
-            "url": "/Slice_PRTO_SMT_S2L/"
-        },
-        {
             "name": "KiCad-Simulation-Examples",
-            "title": "KiCad Simulation Examples",
+            "title": "KiCad Simulation Examples 🔗",
             "url": "/KiCad-Simulation-Examples/"
         },
         {
             "name": "KNEEAD",
-            "title": "KNEEAD",
+            "title": "KNEEAD 🔗",
             "url": "/KNEEAD/"
         }
     ]

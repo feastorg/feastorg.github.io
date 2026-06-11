@@ -48,7 +48,6 @@ EXTRACT = [
     ("hw_gen_current", lambda m: (m.get("hardware") or {}).get("hw_gen_current")),
     ("schema_version", lambda m: m.get("schema_version")),
     ("tags", lambda m: (m.get("metadata") or {}).get("tags", [])),
-    ("url", lambda m: (m.get("repository") or {}).get("url")),
     ("updated", lambda m: (m.get("metadata") or {}).get("updated")),
 ]
 
@@ -121,6 +120,7 @@ def extract(manifest: dict, repo: str) -> dict:
             entry[key] = fn(manifest)
         except Exception:
             entry[key] = None
+    entry["url"] = f"https://feastorg.github.io/{repo}/"
     return entry
 
 
