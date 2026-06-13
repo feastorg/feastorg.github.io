@@ -38,6 +38,23 @@
             ]
         },
         {
+            "name": "bread-crumbs-contracts",
+            "title": "CRUMBS Contracts",
+            "repo": "feastorg/bread-crumbs-contracts",
+            "ref": "main",
+            "subdir": "docs",
+            "mount": "projects/bread-crumbs-contracts",
+            "nav_order": 6,
+            "redirect_from": [
+                "/bread-crumbs-contracts/",
+                "/bread-crumbs-contracts"
+            ],
+            "exclude": [
+                "**/*.xcf",
+                "**/TODO.md"
+            ]
+        },
+        {
             "name": "linux-wire",
             "title": "linux-wire",
             "repo": "feastorg/linux-wire",
@@ -99,6 +116,43 @@
             "redirect_from": [
                 "/nano-dev-boards/",
                 "/nano-dev-boards"
+            ],
+            "exclude": [
+                "**/*.xcf",
+                "**/TODO.md"
+            ]
+        },
+        {
+            "name": "ezo-driver",
+            "title": "EZO Driver",
+            "repo": "feastorg/ezo-driver",
+            "ref": "main",
+            "subdir": "docs",
+            "mount": "projects/ezo-driver",
+            "nav_order": 12,
+            "redirect_from": [
+                "/ezo-driver/",
+                "/ezo-driver"
+            ],
+            "exclude": [
+                "**/*.xcf",
+                "**/TODO.md",
+                "**/python-binding-cutover-plan.md",
+                "**/python-binding-reset-architecture.md",
+                "**/canonical-library-direction.md"
+            ]
+        },
+        {
+            "name": "bread-mechanical",
+            "title": "bread-mechanical",
+            "repo": "feastorg/bread-mechanical",
+            "ref": "main",
+            "subdir": "docs",
+            "mount": "projects/bread-mechanical",
+            "nav_order": 13,
+            "redirect_from": [
+                "/bread-mechanical/",
+                "/bread-mechanical"
             ],
             "exclude": [
                 "**/*.xcf",
