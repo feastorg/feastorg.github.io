@@ -3,8 +3,8 @@
 Generate _data/grain-index.json from grain.yaml manifests across all
 feastorg repos that contain one.
 
-Discovery uses the GitHub Code Search API to find repos with grain.yaml,
-avoiding the need to enumerate all repos.
+Discovery enumerates all public org repos and attempts to fetch grain.yaml
+from each. This avoids code search indexing lag.
 
 Usage:
     python3 scripts/generate_grain_index.py
@@ -74,30 +74,20 @@ def gh_session() -> requests.Session:
     return s
 
 
-def find_grain_repos(session: requests.Session) -> list[str]:
-    """Return distinct repo names that contain grain.yaml via code search."""
-    repos: set[str] = set()
+def list_all_repos(session: requests.Session) -> list[str]:
+    """Return names of all public repos in the org."""
+    repos = []
     page = 1
     while True:
         r = session.get(
-            f"{API}/search/code",
-            params={
-                "q": f"filename:grain.yaml org:{ORG}",
-                "per_page": 100,
-                "page": page,
-            },
+            f"{API}/orgs/{ORG}/repos",
+            params={"type": "public", "per_page": 100, "page": page},
         )
         r.raise_for_status()
-        data = r.json()
-        items = data.get("items", [])
-        if not items:
+        batch = r.json()
+        if not batch:
             break
-        for item in items:
-            # Only count grain.yaml at the repo root (path == "grain.yaml")
-            if item.get("path") == "grain.yaml":
-                repos.add(item["repository"]["name"])
-        if len(items) < 100:
-            break
+        repos.extend(repo["name"] for repo in batch)
         page += 1
     return sorted(repos)
 
@@ -145,16 +135,16 @@ def sort_key(entry: dict) -> tuple:
 def main() -> None:
     session = gh_session()
 
-    print(f"Searching for grain.yaml in {ORG}...", flush=True)
-    repos = find_grain_repos(session)
-    print(f"Found {len(repos)} repo(s) with grain.yaml at root: {repos}", flush=True)
+    print(f"Listing all public repos in {ORG}...", flush=True)
+    repos = list_all_repos(session)
+    print(f"Found {len(repos)} repos. Probing for grain.yaml...", flush=True)
 
     grains = []
     for repo in repos:
-        print(f"  Fetching {repo}/grain.yaml...", flush=True)
         manifest = fetch_manifest(session, repo)
         if manifest is None:
             continue
+        print(f"  FOUND {repo}", flush=True)
         grains.append(extract(manifest, repo))
 
     grains.sort(key=sort_key)

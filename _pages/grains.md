@@ -16,9 +16,9 @@ complement the BREAD ecosystem without implementing the Slice bus.
 {% assign generated = site.data['grain-index'].generated %}
 {% assign total = site.data['grain-index'].total %}
 
-{% if grains %}
+{% if grains and total > 0 %}
 
-**{{ total }} grain{{ total | minus: 1 | sign | replace: "+", "s" | replace: "0", "s" }}** · Generated {{ generated | slice: 0, 10 }}
+**{{ total }} grain{% if total != 1 %}s{% endif %}** · Generated {{ generated | slice: 0, 10 }}
 {%- if summary.released and summary.released > 0 %} · <span class="slice-badge slice-badge--released">released {{ summary.released }}</span>{% endif %}
 {%- if summary.prototype and summary.prototype > 0 %} · <span class="slice-badge slice-badge--prototype">prototype {{ summary.prototype }}</span>{% endif %}
 {%- if summary.concept and summary.concept > 0 %} · <span class="slice-badge slice-badge--concept">concept {{ summary.concept }}</span>{% endif %}
