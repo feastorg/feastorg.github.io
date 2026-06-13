@@ -1,16 +1,6 @@
 {
     "linked_projects": [
         {
-            "name": "can-nano-shield",
-            "title": "🔗 CAN Nano Shield",
-            "url": "/can-nano-shield/"
-        },
-        {
-            "name": "can-nano-shield-fieldbus",
-            "title": "🔗 CAN Nano Fieldbus",
-            "url": "/can-nano-shield-fieldbus/"
-        },
-        {
             "name": "KiCad-Simulation-Examples",
             "title": "🔗 KiCad Sim Examples",
             "url": "/KiCad-Simulation-Examples/"

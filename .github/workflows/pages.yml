@@ -47,6 +47,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Generate grain registry index
+        run: python3 scripts/generate_grain_index.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Generate linked project stubs
         run: python3 scripts/generate_linked_redirects.py
 
