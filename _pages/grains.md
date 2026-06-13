@@ -3,6 +3,7 @@ layout: default
 title: Grain Registry
 parent: Projects
 nav_order: 2
+has_children: true
 permalink: /grains/
 ---
 
