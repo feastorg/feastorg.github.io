@@ -10,8 +10,4 @@ has_children: true
 
 The FEAST ecosystem consists of several project repositories that provide tools, resources, and implementations in support of our broader automation framework. Projects rendered directly on this site are accessible through the left-hand navigation menu.
 
-Additional project pages, hosted standalone, can be accessed via their corresponding GitHub Pages sites:
-
-{% for project in site.data.linked_projects.linked_projects %}
-- [{{ project.title }}]({{ project.url }})
-{% endfor %}
+Additional projects hosted on standalone GitHub Pages sites are listed at the bottom of the navigation.
