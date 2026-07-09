@@ -7,7 +7,7 @@ nav_order: 2
 permalink: /grains/card/
 ---
 
-# Card GRAINs
+# Card Grains
 
 {% assign grains = site.data['grain-index'].grains | where: "category", "card" %}
 {% if grains.size > 0 %}
@@ -23,5 +23,5 @@ permalink: /grains/card/
 </div>
 
 {% else %}
-No card GRAINs indexed yet.
+No card Grains indexed yet.
 {% endif %}

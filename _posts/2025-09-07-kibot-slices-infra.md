@@ -5,11 +5,11 @@ date: 2025-09-07 17:18:45 -0400
 author: Cameron K. Brooks
 ---
 
-We now have a **reusable CI/CD pipeline** for KiCad boards that builds with **KiBot**, generates a Markdown index, and deploys to **GitHub Pages**—all centralized in **[`feastorg/slice-infra`](https://github.com/feastorg/slice-infra)**. First trials complete and working at: **[`feastorg/Slice_DCMT`](https://feastorg.github.io/Slice_DCMT)** and **[`feastorg/Slice_TEMP`](https://feastorg.github.io/Slice_TEMP)**.
+We now have a **reusable CI/CD pipeline** for KiCad boards that builds with **KiBot**, generates a Markdown index, and deploys to **GitHub Pages**. The current reusable workflows live in **[`feastorg/bread-infra`](https://github.com/feastorg/bread-infra)**.
 
 ### What has shipped?
 
-- Reusable workflows in `slice-infra`:
+- Reusable workflows in `bread-infra`:
   - `kibot-ci.yml` – runs ERC/DRC and fabricates artifacts.
   - `publish-kibot.yml` – resolves artifacts (incl. iBOM variants), writes `docs/kibot/index.md`, commits.
   - `deploy-pages.yml` – stages selected outputs and deploys Jekyll site.
@@ -35,16 +35,16 @@ on:
 
 jobs:
   kibot:
-    uses: feastorg/slice-infra/.github/workflows/kibot-ci.yml@main
+    uses: feastorg/bread-infra/.github/workflows/kibot-ci.yml@main
 
   gen-kibot-index:
-    uses: feastorg/slice-infra/.github/workflows/publish-kibot.yml@main
+    uses: feastorg/bread-infra/.github/workflows/publish-kibot.yml@main
     needs: [kibot]
     with:
       kibot_run_id: ${{ needs.kibot.outputs.kibot_run_id }}
 
   deploy-pages:
-    uses: feastorg/slice-infra/.github/workflows/deploy-pages.yml@main
+    uses: feastorg/bread-infra/.github/workflows/deploy-pages.yml@main
     needs: [gen-kibot-index]
     with:
       kibot_run_id: ${{ needs.kibot.outputs.kibot_run_id }}

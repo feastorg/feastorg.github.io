@@ -7,7 +7,7 @@ nav_order: 4
 permalink: /grains/module/
 ---
 
-# Module GRAINs
+# Module Grains
 
 {% assign grains = site.data['grain-index'].grains | where: "category", "module" %}
 {% if grains.size > 0 %}
@@ -23,5 +23,5 @@ permalink: /grains/module/
 </div>
 
 {% else %}
-No module GRAINs indexed yet.
+No module Grains indexed yet.
 {% endif %}

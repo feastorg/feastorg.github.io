@@ -7,7 +7,7 @@ nav_order: 3
 permalink: /grains/adapter/
 ---
 
-# Adapter GRAINs
+# Adapter Grains
 
 {% assign grains = site.data['grain-index'].grains | where: "category", "adapter" %}
 {% if grains.size > 0 %}
@@ -23,5 +23,5 @@ permalink: /grains/adapter/
 </div>
 
 {% else %}
-No adapter GRAINs indexed yet.
+No adapter Grains indexed yet.
 {% endif %}

@@ -7,7 +7,7 @@ nav_order: 1
 permalink: /grains/shield/
 ---
 
-# Shield GRAINs
+# Shield Grains
 
 {% assign grains = site.data['grain-index'].grains | where: "category", "shield" %}
 {% if grains.size > 0 %}
@@ -23,5 +23,5 @@ permalink: /grains/shield/
 </div>
 
 {% else %}
-No shield GRAINs indexed yet.
+No shield Grains indexed yet.
 {% endif %}

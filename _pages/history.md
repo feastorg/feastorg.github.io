@@ -34,7 +34,7 @@ As part of joint project with MTU and Western University and others for plastic 
 
 Further mechanical developments and applications to bioreactors and pH control was done by Finn Hafting and is reflected in the paper [Moving the Open-Source Broadly Reconfigurable and Expandable Automation Device (BREAD) Towards a Supervisory Control and Data Acquisition (SCADA) System](https://doi.org/10.3390/technologies13040125). The ESPT controller as since been discontinued due to its inhereint limitations in reliably handling more complex supervision and networking requirements posed by future development.
 
-## Legacy SLICEs
+## Legacy Slices
 
 (v0 & v1)
 

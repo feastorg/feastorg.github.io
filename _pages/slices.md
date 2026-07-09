@@ -9,7 +9,8 @@ permalink: /slices/
 
 # Slice Registry
 
-All BREAD Slice modules, auto-generated from each repo's `slice.yaml` manifest.
+All BREADS-compatible Slice modules, auto-generated from each repo's
+`slice.yaml` manifest.
 
 {% assign slices = site.data['slice-index'].slices %}
 {% assign summary = site.data['slice-index'].summary %}

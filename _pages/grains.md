@@ -9,8 +9,9 @@ permalink: /grains/
 
 # Grain Registry
 
-FEAST-adjacent PCB hardware modules — shields, cards, and adapters that
-complement the BREAD ecosystem without implementing the Slice bus.
+FEAST-adjacent PCB hardware modules: shields, cards, adapters, and support
+boards that may be used in or alongside a BREAD without implementing the
+BREADS Slice interface.
 
 {% assign grains = site.data['grain-index'].grains %}
 {% assign summary = site.data['grain-index'].summary %}

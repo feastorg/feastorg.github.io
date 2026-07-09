@@ -2,7 +2,7 @@
     "sources": [
         {
             "name": "bread-infra",
-            "title": "BREAD Standard",
+            "title": "BREADS",
             "repo": "feastorg/bread-infra",
             "ref": "main",
             "subdir": "spec",

@@ -13,8 +13,9 @@ Major updates to the feastorg website structure and design completed today.
 
 - Moved content to `_pages/` directory with proper categorization
 - Added structured navigation hierarchy:
-  - Implementation Domains (BREADS, FROOTS, PROTINS, SUGIRS)
-  - System Levels (SLICE, LOAF, BATCH, OVEN)
+  - Projects
+  - Getting Started
+  - Usage
   - Developer Resources (KiCad libraries and examples)
 
 ### Custom Styling
