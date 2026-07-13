@@ -1,0 +1,52 @@
+{
+  "generated": "2026-07-13T04:39:09Z",
+  "total": 2,
+  "summary": {
+    "prototype": 2
+  },
+  "loaves": [
+    {
+      "repo": "Loaf_x004",
+      "id": "loaf-x004",
+      "name": "x004 Loaf",
+      "status": "prototype",
+      "role": "backplane",
+      "summary": "Four-Slice backplane distributing 12V and I2C over the Slice bus.",
+      "slice_slots": 4,
+      "bus_type": "i2c",
+      "hw_version": "0.3.0",
+      "hw_gen_current": 2,
+      "pcb_layers": 2,
+      "schema_version": "1.0",
+      "tags": [
+        "backplane",
+        "four-slice",
+        "i2c"
+      ],
+      "updated": "2026-07-13",
+      "url": "https://feastorg.github.io/Loaf_x004/"
+    },
+    {
+      "repo": "Loaf_ESPT",
+      "id": "loaf-espt",
+      "name": "ESP32 Thing Plus Controller Loaf",
+      "status": "prototype",
+      "role": "controller",
+      "summary": "Controller Loaf carrying a SparkFun ESP32 Thing Plus, chaining onto a backplane.",
+      "slice_slots": 0,
+      "bus_type": "i2c",
+      "hw_version": "0.2.0",
+      "hw_gen_current": 2,
+      "pcb_layers": 2,
+      "schema_version": "1.0",
+      "tags": [
+        "controller",
+        "esp32",
+        "thing-plus",
+        "i2c"
+      ],
+      "updated": "2026-07-13",
+      "url": "https://feastorg.github.io/Loaf_ESPT/"
+    }
+  ]
+}
