@@ -21,7 +21,7 @@ gem "jekyll-seo-tag"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-relative-links", "~> 0.6" 
+  gem "jekyll-relative-links", "~> 0.8" 
   gem "jekyll-titles-from-headings", "~> 0.5"
   gem "jekyll-redirect-from", "~> 0.16"
 end
