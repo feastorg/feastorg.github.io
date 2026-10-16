@@ -23,7 +23,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-relative-links", "~> 0.9" 
   gem "jekyll-titles-from-headings", "~> 0.5"
-  gem "jekyll-redirect-from", "~> 0.16"
+  gem "jekyll-redirect-from", "~> 0.17"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
