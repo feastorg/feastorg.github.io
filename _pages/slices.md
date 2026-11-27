@@ -21,10 +21,10 @@ All BREADS-compatible Slice modules, auto-generated from each repo's
 
 **{{ total }} slices** · Generated {{ generated | slice: 0, 10 }}
 {%- if summary.released and summary.released > 0 %} · <span class="slice-badge slice-badge--released">released {{ summary.released }}</span>{% endif %}
-{%- if summary.validated and summary.validated > 0 %} · <span class="slice-badge slice-badge--validated">validated {{ summary.validated }}</span>{% endif %}
-{%- if summary.prototype and summary.prototype > 0 %} · <span class="slice-badge slice-badge--prototype">prototype {{ summary.prototype }}</span>{% endif %}
+{%- if summary.built and summary.built > 0 %} · <span class="slice-badge slice-badge--built">built {{ summary.built }}</span>{% endif %}
+{%- if summary.development and summary.development > 0 %} · <span class="slice-badge slice-badge--development">development {{ summary.development }}</span>{% endif %}
 {%- if summary.concept and summary.concept > 0 %} · <span class="slice-badge slice-badge--concept">concept {{ summary.concept }}</span>{% endif %}
-{%- if summary.deprecated and summary.deprecated > 0 %} · <span class="slice-badge slice-badge--deprecated">deprecated {{ summary.deprecated }}</span>{% endif %}
+{%- if summary.retired and summary.retired > 0 %} · <span class="slice-badge slice-badge--retired">retired {{ summary.retired }}</span>{% endif %}
 
 ---
 
@@ -41,7 +41,7 @@ All BREADS-compatible Slice modules, auto-generated from each repo's
 | Module | Summary | Status | HW | Tags |
 |---|---|---|---|---|
 {% for s in cat_slices -%}
-| [{{ s.name | default: s.repo }}]({{ s.url }}) | {{ s.summary | default: "—" }} | <span class="slice-badge slice-badge--{{ s.status }}">{{ s.status }}</span> | {% if s.hw_version %}v{{ s.hw_version }} (gen {{ s.hw_gen_current }}){% else %}—{% endif %} | {% if s.tags and s.tags.size > 0 %}{{ s.tags | join: ", " }}{% else %}—{% endif %} |
+| [{{ s.name | default: s.repo }}]({{ s.url }}) | {{ s.summary | default: "—" }} | <span class="slice-badge slice-badge--{{ s.status }}">{{ s.status }}</span> | {% if s.hw_gen_current %}G{{ s.hw_gen_current }}{% else %}—{% endif %} | {% if s.tags and s.tags.size > 0 %}{{ s.tags | join: ", " }}{% else %}—{% endif %} |
 {% endfor %}
 
 </div>

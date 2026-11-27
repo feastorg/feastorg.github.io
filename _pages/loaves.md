@@ -24,10 +24,10 @@ interface and chains onto a backplane, with no Slice slots of its own.
 
 **{{ total }} loaves** · Generated {{ generated | slice: 0, 10 }}
 {%- if summary.released and summary.released > 0 %} · <span class="slice-badge slice-badge--released">released {{ summary.released }}</span>{% endif %}
-{%- if summary.validated and summary.validated > 0 %} · <span class="slice-badge slice-badge--validated">validated {{ summary.validated }}</span>{% endif %}
-{%- if summary.prototype and summary.prototype > 0 %} · <span class="slice-badge slice-badge--prototype">prototype {{ summary.prototype }}</span>{% endif %}
+{%- if summary.built and summary.built > 0 %} · <span class="slice-badge slice-badge--built">built {{ summary.built }}</span>{% endif %}
+{%- if summary.development and summary.development > 0 %} · <span class="slice-badge slice-badge--development">development {{ summary.development }}</span>{% endif %}
 {%- if summary.concept and summary.concept > 0 %} · <span class="slice-badge slice-badge--concept">concept {{ summary.concept }}</span>{% endif %}
-{%- if summary.deprecated and summary.deprecated > 0 %} · <span class="slice-badge slice-badge--deprecated">deprecated {{ summary.deprecated }}</span>{% endif %}
+{%- if summary.retired and summary.retired > 0 %} · <span class="slice-badge slice-badge--retired">retired {{ summary.retired }}</span>{% endif %}
 
 ---
 
@@ -44,7 +44,7 @@ interface and chains onto a backplane, with no Slice slots of its own.
 | Loaf | Summary | Slots | Bus | Status | HW | Tags |
 |---|---|---|---|---|---|---|
 {% for l in role_loaves -%}
-| [{{ l.name | default: l.repo }}]({{ l.url }}) | {{ l.summary | default: "—" }} | {{ l.slice_slots }} | {{ l.bus_type | default: "—" }} | <span class="slice-badge slice-badge--{{ l.status }}">{{ l.status }}</span> | {% if l.hw_version %}v{{ l.hw_version }} (gen {{ l.hw_gen_current }}){% else %}—{% endif %} | {% if l.tags and l.tags.size > 0 %}{{ l.tags | join: ", " }}{% else %}—{% endif %} |
+| [{{ l.name | default: l.repo }}]({{ l.url }}) | {{ l.summary | default: "—" }} | {{ l.slice_slots }} | {{ l.bus_type | default: "—" }} | <span class="slice-badge slice-badge--{{ l.status }}">{{ l.status }}</span> | {% if l.hw_gen_current %}G{{ l.hw_gen_current }}{% else %}—{% endif %} | {% if l.tags and l.tags.size > 0 %}{{ l.tags | join: ", " }}{% else %}—{% endif %} |
 {% endfor %}
 
 </div>

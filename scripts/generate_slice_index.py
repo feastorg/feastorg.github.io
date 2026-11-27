@@ -51,7 +51,7 @@ EXTRACT = [
     ("updated", lambda m: (m.get("metadata") or {}).get("updated")),
 ]
 
-STATUS_ORDER = ["released", "validated", "prototype", "concept", "deprecated"]
+STATUS_ORDER = ["released", "built", "development", "concept", "retired"]
 CATEGORY_ORDER = [
     "actuation",
     "sensing",

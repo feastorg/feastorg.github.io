@@ -11,10 +11,10 @@
   letter-spacing: 0.04em;
 }
 .slice-badge--released    { background: $feast-primary-100; color: #fff; }
-.slice-badge--validated   { background: $feast-growth-100;  color: #fff; }
-.slice-badge--prototype   { background: $feast-accent-100;  color: #fff; }
+.slice-badge--built       { background: $feast-growth-100;  color: #fff; }
+.slice-badge--development { background: $feast-accent-100;  color: #fff; }
 .slice-badge--concept     { background: $feast-text-muted;  color: #fff; }
-.slice-badge--deprecated  { background: #c0392b;            color: #fff; }
+.slice-badge--retired     { background: #c0392b;            color: #fff; }
 
 // ── Slice registry table ─────────────────────────────────────────────────────
 .slice-registry table {
