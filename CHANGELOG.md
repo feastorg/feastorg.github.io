@@ -11,6 +11,19 @@ The format follows the spirit of Keep a Changelog, with entries grouped under
 
 ---
 
+## 2026-11-28
+
+### Fixed
+
+- Registry links go to a board's docs site only when it serves, and to the
+  repository on GitHub otherwise. Slice_ACAR_L2L, Slice_SOLR, Slice_THMX and
+  Loaf_x008 have no docs site, so their links were 404s.
+- The Loaf Registry lists `Ctrl_*` repositories as well as `Loaf_*`, so
+  Ctrl_ESPT (renamed from Loaf_ESPT) is listed again as a controller.
+- The History page shows five retired boards by name without a link, as their
+  links were 404s, and points Loaf_ESPT and Slice_PHDO at their renamed
+  repositories.
+
 ## 2026-06-11
 
 ### Added
