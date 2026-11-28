@@ -55,6 +55,6 @@ interface and chains onto a backplane, with no Slice slots of its own.
 {% else %}
 
 _No Loaf manifests found. The index is regenerated daily from `loaf.yaml` in each
-`Loaf_*` repo._
+`Loaf_*` and `Ctrl_*` repo._
 
 {% endif %}
