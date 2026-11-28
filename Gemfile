@@ -22,7 +22,7 @@ gem "jekyll-seo-tag"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.18"
   gem "jekyll-relative-links", "~> 0.9" 
-  gem "jekyll-titles-from-headings", "~> 0.5"
+  gem "jekyll-titles-from-headings", "~> 0.6"
   gem "jekyll-redirect-from", "~> 0.17"
 end
 
