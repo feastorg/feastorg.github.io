@@ -113,6 +113,22 @@ def fetch_manifest(session: requests.Session, repo: str) -> dict | None:
         return None
 
 
+def docs_url(repo: str) -> str:
+    """The repo's docs site if it serves, otherwise the repo on GitHub.
+
+    A board whose Pages site is off or has never deployed would otherwise be a
+    dead link on the registry.
+    """
+    site = f"https://feastorg.github.io/{repo}/"
+    try:
+        r = requests.head(site, allow_redirects=True, timeout=20)
+        if r.status_code == 200:
+            return site
+    except requests.RequestException:
+        pass
+    return f"https://github.com/{ORG}/{repo}"
+
+
 def extract(manifest: dict, repo: str) -> dict:
     entry = {"repo": repo}
     for key, fn in EXTRACT:
@@ -120,7 +136,7 @@ def extract(manifest: dict, repo: str) -> dict:
             entry[key] = fn(manifest)
         except Exception:
             entry[key] = None
-    entry["url"] = f"https://feastorg.github.io/{repo}/"
+    entry["url"] = docs_url(repo)
     return entry
 
 

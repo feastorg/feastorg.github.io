@@ -73,7 +73,7 @@ def gh_session() -> requests.Session:
 
 
 def list_loaf_repos(session: requests.Session) -> list[str]:
-    """Return names of all public Loaf_* repos in the org."""
+    """Return names of all public Loaf_* and Ctrl_* repos in the org."""
     repos = []
     page = 1
     while True:
@@ -85,7 +85,8 @@ def list_loaf_repos(session: requests.Session) -> list[str]:
         batch = r.json()
         if not batch:
             break
-        repos.extend(repo["name"] for repo in batch if repo["name"].startswith("Loaf_"))
+        # Controllers (Ctrl_*) chain onto a backplane and carry a loaf.yaml with role: controller.
+        repos.extend(repo["name"] for repo in batch if repo["name"].startswith(("Loaf_", "Ctrl_")))
         page += 1
     return sorted(repos)
 
@@ -105,6 +106,22 @@ def fetch_manifest(session: requests.Session, repo: str) -> dict | None:
         return None
 
 
+def docs_url(repo: str) -> str:
+    """The repo's docs site if it serves, otherwise the repo on GitHub.
+
+    A board whose Pages site is off or has never deployed would otherwise be a
+    dead link on the registry.
+    """
+    site = f"https://feastorg.github.io/{repo}/"
+    try:
+        r = requests.head(site, allow_redirects=True, timeout=20)
+        if r.status_code == 200:
+            return site
+    except requests.RequestException:
+        pass
+    return f"https://github.com/{ORG}/{repo}"
+
+
 def extract(manifest: dict, repo: str) -> dict:
     entry = {"repo": repo}
     for key, fn in EXTRACT:
@@ -112,7 +129,7 @@ def extract(manifest: dict, repo: str) -> dict:
             entry[key] = fn(manifest)
         except Exception:
             entry[key] = None
-    entry["url"] = f"https://feastorg.github.io/{repo}/"
+    entry["url"] = docs_url(repo)
     return entry
 
 
@@ -127,7 +144,7 @@ def sort_key(entry: dict) -> tuple:
 def main() -> None:
     session = gh_session()
 
-    print(f"Listing Loaf_* repos in {ORG}...", flush=True)
+    print(f"Listing Loaf_* and Ctrl_* repos in {ORG}...", flush=True)
     repos = list_loaf_repos(session)
     print(f"Found {len(repos)} repos.", flush=True)
 
